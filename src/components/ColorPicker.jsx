@@ -21,4 +21,4 @@ const ColorPicker = () => {
     )
 }
 
-export default ColorPicker
+export default ColorPicker;

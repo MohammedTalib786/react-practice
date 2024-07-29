@@ -1,21 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const FunctionalLists = () => {
-    return (
-        <>
-            <h3>Functional Lists</h3>
+  let arr = ['mango', 'apple', 'banana', 'cherry', 'grapes']
+  let [index, setIndex] = useState(-1);
+  const handlerClick = (elemInd) => setIndex(elemInd)
 
-            <ul className="list-group">
-                <li className="list-group-item  ">An item</li>
-                <li className="list-group-item">A second item</li>
-                <li className="list-group-item">A third item</li>
-                <li className="list-group-item">A fourth item</li>
-                <li className="list-group-item">And a fifth one</li>
-            </ul>
+  return (
+    <>
+      <h3>Functional Lists</h3>
+      <ul className="list-group">
+        {
+          arr.map((elem, ind) => <li key={ind} className={ind === index ? "list-group-item active" : "list-group-item"} onClick={() => handlerClick(ind)} > {ind + 1} {elem}</li>)
+        }
+      </ul>
+    </>
 
-        </>
-
-    )
+  )
 }
 
 export default FunctionalLists

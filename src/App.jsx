@@ -4,6 +4,9 @@ import UpdateObjs from './components/UpdateObjs'
 import UpdateArrysOfObjs from './components/UpdateArrysOfObjs'
 import ColorPicker from './components/ColorPicker'
 import FunctionalLists from './components/FunctionalLists'
+import Alert from './components/Alert'
+import UpdaterFunc from './components/UpdaterFunc'
+import PropAndTypes from './components/PropAndTypes'
 
 const App = () => {
   return (
@@ -12,8 +15,11 @@ const App = () => {
       {/* <UpdateObjs /> */}
       {/* <UpdateArrys /> */}
       {/* <UpdateArrysOfObjs /> */}
-      <ColorPicker />
+      {/* <ColorPicker /> */}
+      {/* <UpdaterFunc /> */}
+      {/* <Alert /> */}
       {/* <FunctionalLists /> */}
+      <PropAndTypes />
     </>
   )
 }
