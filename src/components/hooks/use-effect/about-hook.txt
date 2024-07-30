@@ -1,0 +1,18 @@
+// useEffect is a React Hook that tells React DO SOME CODE When (pick one)
+// => This component renders
+// => This component mounts
+// => The state of a value
+
+// Syntax:
+// useEffect(function, [dependencies])
+
+// 1. useEffect(()=> {} )       // Runs after every re-render
+// 2. useEffect(()=> {}, [])    // Runs only on Mounts
+// 3. useEffect(()=> {}, [value])    // Runs on Mounts+ when value changes
+
+// USES
+// #1 Event Listeners
+// #2 DOM Manipulation
+// #3 subscriptions (real-time updates)
+// #4 Fetching api from an API
+// #5 Clean up when a component unmounts
