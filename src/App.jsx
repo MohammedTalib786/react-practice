@@ -1,10 +1,10 @@
 import React from 'react'
-import UpdateArrys from './components/UpdateArrys'
-import UpdateObjs from './components/UpdateObjs'
-import UpdateArrysOfObjs from './components/UpdateArrysOfObjs'
+import UpdateObjs from './components/updater-functions/UpdateObjs'
+import UpdateArrys from './components/updater-functions/UpdateArrys'
+import UpdateArrysOfObjs from './components/updater-functions/UpdateArrysOfObjs'
 import ColorPicker from './components/ColorPicker'
 import Alert from './components/Alert'
-import UpdaterFunc from './components/UpdaterFunc'
+import UpdaterFunc from './components/updater-functions/UpdaterFunc'
 import PropAndTypes from './components/PropAndTypes'
 import FunctionalLists from './components/FunctionalLists'
 import UseStateHook from './components/hooks/use-state/UseStateHook'
@@ -15,6 +15,10 @@ import UseRefOne from './components/hooks/use-ref/UseRefOne'
 import UseRefTwo from './components/hooks/use-ref/UseRefTwo'
 import UseRefThree from './components/hooks/use-ref/UseRefThree'
 import UseContextHook from './components/hooks/use-context/UseContextHook'
+import OnchnagingInput from './components/on-change-handler/OnchnagingInput'
+import OnchnagingInputTwo from './components/on-change-handler/OnchnagingInputTwo'
+import FormHandling from './components/FormHandling'
+
 
 const App = () => {
   return (
@@ -35,7 +39,11 @@ const App = () => {
       {/* <UseRefOne /> */}
       {/* <UseRefTwo /> */}
       {/* <UseRefThree /> */}
-      <UseContextHook />
+      {/* <UseContextHook /> */}
+      {/* <OnchnagingInput /> */}
+      {/* <OnchnagingInputTwo /> */}
+      <FormHandling />
+      
     </>
   )
 }
